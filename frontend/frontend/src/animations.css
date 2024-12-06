@@ -1,0 +1,75 @@
+/* Hover animations */
+.animate-hover {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.animate-hover:hover {
+  transform: translateY(-3px);
+  color: #4a90e2;
+}
+
+/* Button hover effects */
+.login-button {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Card hover effects */
+.benefit-card, .testimonial-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover, .testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Floating animation for decorative elements */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.decoration {
+  animation: float 6s ease-in-out infinite;
+}
+
+.decoration-1 {
+  animation-delay: 0s;
+}
+
+.decoration-2 {
+  animation-delay: -2s;
+}
+
+.decoration-3 {
+  animation-delay: -4s;
+}
+
+/* Pulse animation for feature icons */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.feature-icon {
+  animation: pulse 2s ease-in-out infinite;
+} 

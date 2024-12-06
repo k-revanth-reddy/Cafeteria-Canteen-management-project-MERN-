@@ -1,0 +1,286 @@
+.landing-page {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.nav-logo {
+  color: #e74c3c;
+  font-size: 1.8rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #e74c3c;
+}
+
+/* Existing styles... */
+
+/* Why Choose Us Section */
+.why-choose-us {
+  padding: 4rem 2rem;
+  background: white;
+  text-align: center;
+}
+
+.why-choose-us h2 {
+  color: #2c3e50;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.benefit-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.benefit-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .landing-content {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Keep existing styles and add these new ones */
+.landing-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.content-side {
+  flex: 1;
+  max-width: 600px;
+}
+
+.buttons-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Update existing button styles */
+.login-button {
+  width: 100%;
+  max-width: 400px;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student-button {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+}
+
+.owner-button {
+  background: linear-gradient(135deg, #2c3e50 0%, #2c3e50 100%);
+}
+
+.floating {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.floating:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 4rem 2rem;
+  background: #f8f9fa;
+}
+
+.testimonials h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.quote-icon {
+  color: #e74c3c;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-text {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-info h4 {
+  color: #2c3e50;
+  margin: 0;
+}
+
+.author-info p {
+  color: #666;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Footer Section */
+.footer-section {
+  padding: 3rem 2rem;
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-link {
+  color: white;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.social-link:hover {
+  transform: translateY(-5px) scale(1.1);
+  color: #e74c3c;
+}
+
+.social-icon {
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2));
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Update responsive design for footer */
+@media (max-width: 768px) {
+  .social-links {
+    gap: 1.5rem;
+  }
+  
+  .social-link {
+    font-size: 1.5rem;
+  }
+}
