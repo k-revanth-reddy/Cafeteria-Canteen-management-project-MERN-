@@ -285,6 +285,7 @@ app.get('/owneritems', async (req, res) => {
     return res.status(400).json({ message: 'Owner ID is required' });
   }
 
+  
   try {
     // Find food items where the 'createdBy' field matches the provided ownerId
     const items = await FoodItem.find({ createdBy: ownerId });
